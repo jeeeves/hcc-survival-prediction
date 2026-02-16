@@ -1,10 +1,14 @@
 # HCC Dataset Documentation
 
-## Dataset Overview
-- **Source**: University Hospital, Portugal
-- **Patients**: 165 real HCC patients
-- **Features**: 49 clinical features + 1 survival outcome
-- **Target Variable**: 1-year survival (0 = dies, 1 = lives)
+## Files in This Directory
+
+### hcc-data.csv
+- **Description**: Original HCC patient dataset
+- **Rows**: 165 patients
+- **Columns**: 50 (49 clinical features + 1 one-year survival outome)
+- **Format**: CSV with headers
+- **Missing values**: Denoted by "?"
+- **Target variable**: `Class` (0 = dies, 1 = lives)
 - **Collection Period**: 2015, based on citation
 
 ## Data Characteristics
@@ -61,16 +65,6 @@ The non-random (MNAR) nature of this missingness means that our imputation strat
 - **Class imbalance**: requires appropriate handling
 - **Single-center study**: may not generalise to all populations
 - **Limited to 1-year survival**: does not capture longer-term outcomes
-
-## Files in This Directory
-
-### hcc-data.csv
-- **Description**: Original HCC patient dataset
-- **Rows**: 165 patients
-- **Columns**: 50 (49 features + 1 target)
-- **Format**: CSV with headers
-- **Missing values**: Denoted by "?"
-- **Target variable**: `Class` (0 = dies, 1 = lives)
 
 This project uses the **original, unprocessed HCC dataset** rather than preprocessed 
 versions to demonstrate real-world situations:
